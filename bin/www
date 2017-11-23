@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var app = require('../defaultApp');
 var debug = require('debug')('futtrack:server');
 var http = require('http');
 

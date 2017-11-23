@@ -20,6 +20,7 @@ var WeekendLeague = (function () {
     }
     return WeekendLeague;
 }());
+exports.WeekendLeague = WeekendLeague;
 var OnlineDivision = (function () {
     function OnlineDivision(division) {
         this.division = division;

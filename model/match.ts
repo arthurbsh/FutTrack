@@ -10,11 +10,11 @@ enum Mode {
     SquadBattle
 }
 
-interface GameMode {
+export interface GameMode {
     mode: Mode;
 }
 
-class WeekendLeague implements GameMode {
+export class WeekendLeague implements GameMode {
     week: number;
     mode: Mode;
 

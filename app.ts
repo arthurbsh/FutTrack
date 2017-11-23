@@ -1,10 +1,11 @@
 'use strict';
+import {DataAccess} from "./database/DataAccess";
+import {WeekendLeague} from "./model/match";
 
-import {Match} from "./model/match";
+var db = new DataAccess();
 
-var m = new Match();
+db.init()
 
-console.log(m.scoreAway);
-console.log(m.scoreHome);
+db.add("gamemodes", new WeekendLeague(10));
 
-console.log("End");
+console.log("Exit");
